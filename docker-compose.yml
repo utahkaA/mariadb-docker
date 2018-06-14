@@ -1,0 +1,11 @@
+version: '3'
+services:
+  database:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: sample
+      MYSQL_USER: test
+      MYSQL_PASSWORD: test
